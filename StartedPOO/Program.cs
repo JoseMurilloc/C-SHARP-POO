@@ -1,5 +1,6 @@
 ﻿using StartedPOO.Classes;
 using System;
+using System.Linq;
 
 namespace StartedPOO
 {
@@ -19,6 +20,11 @@ namespace StartedPOO
       );
 
       cliente.ListContatos();
+
+      // Exemplo usando expressões lambdas
+      var contato = cliente.Contatos.FirstOrDefault(c => c.Tipo == "Telefone");
+
+      Console.WriteLine(contato);
     }
   }
 }

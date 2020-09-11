@@ -8,7 +8,7 @@ namespace StartedPOO.Classes
     public int Codigo { get; set; }
     public string Nome { get; set; }
     public DateTime DataCadastro { get; set; }
-    private List<Contato> Contatos { get; set; }
+    public List<Contato> Contatos { get; set; }
 
 
     public Cliente(int Codigo, string Nome, DateTime DataCadastro, Contato contato)
