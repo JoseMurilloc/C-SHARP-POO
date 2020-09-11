@@ -2,7 +2,7 @@
 
 namespace StartedPOO.Classes
 {
-  class Contato
+  public class Contato
   {
     public int Codigo { get; set; }
     public string DadosContato { get; set; }
@@ -17,7 +17,8 @@ namespace StartedPOO.Classes
 
     public override string ToString()
     {
-      return "\nConato: " + this.DadosContato + "\nTipo do contato: " + this.Tipo;
+      return "Codigo: " + this.Codigo + " | DadosContato: " + this.DadosContato +
+        " | Tipo: " + this.Tipo;
     }
   }
 }

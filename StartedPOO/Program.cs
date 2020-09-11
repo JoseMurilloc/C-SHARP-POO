@@ -7,9 +7,18 @@ namespace StartedPOO
   {
     static void Main(string[] args)
     {
-      var cliente = new Cliente(0, "JOSE MURILLO", new DateTime(2019, 12, 12));
+      var cliente = new Cliente(
+        0, 
+        "JOSE MURILLO", 
+        new DateTime(2019, 12, 12),
+        new Contato(0, "65656-45454", "Telefone")
+      );
 
-      Console.WriteLine(cliente);
+      cliente.AddNewContato(
+       new Contato(1, "464645-415", "Telefone")
+      );
+
+      cliente.ListContatos();
     }
   }
 }
