@@ -21,10 +21,14 @@ namespace StartedPOO
 
       cliente.ListContatos();
 
+      cliente.Gravar();
+
       // Exemplo usando expressões lambdas
       var contato = cliente.Contatos.FirstOrDefault(c => c.Tipo == "Telefone");
 
       Console.WriteLine(contato);
+
+      Console.ReadLine();
     }
   }
 }

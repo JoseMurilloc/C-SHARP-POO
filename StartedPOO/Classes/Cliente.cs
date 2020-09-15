@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace StartedPOO.Classes
 {
-  public class Cliente
+  public partial class Cliente
   {
     public int Codigo { get; set; }
     public string Nome { get; set; }
@@ -20,24 +20,6 @@ namespace StartedPOO.Classes
       this.Contatos = new List<Contato>();
 
       this.Contatos.Add(new Contato(contato.Codigo, contato.DadosContato, contato.Tipo));
-    }
-  
-    public void ListContatos()
-    {
-      foreach(Contato c in this.Contatos)
-      {
-        Console.WriteLine(c);
-      }
-    }
-
-    public void AddNewContato(Contato contanto)
-    {
-      this.Contatos.Add(contanto);
-    }
-
-    public override string ToString()
-    {
-      return "Cliente: " + this.Nome;
     }
   }
 }
