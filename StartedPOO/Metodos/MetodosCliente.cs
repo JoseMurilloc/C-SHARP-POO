@@ -9,10 +9,14 @@ namespace StartedPOO.Classes
       Console.WriteLine("Gravando");
     }
 
+    public void Apagar()
+    {
+      Console.WriteLine("Apagando");
+    }
+
     public void ListContatos()
     {
-      foreach (Contato c in this.Contatos)
-      {
+      foreach (Contato c in this.Contatos) {
         Console.WriteLine(c);
       }
     }
